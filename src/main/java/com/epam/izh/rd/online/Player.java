@@ -6,23 +6,7 @@ public class Player {
 
     static int countMatchesPlayer;
 
-    private int countMatchesNumberMovePlayer;
-
-    public int getCountMatchesNumberMovePlayer() {
-        return countMatchesNumberMovePlayer;
-    }
-
-    public void setCountMatchesNumberMovePlayer(int countMatchesNumberMovePlayer) {
-        this.countMatchesNumberMovePlayer = countMatchesNumberMovePlayer;
-    }
-
-    public static int getCountMatchesPlayer() {
-        return countMatchesPlayer;
-    }
-
-    public static void setCountMatchesPlayer(int countMatchesPlayer) {
-        Player.countMatchesPlayer = countMatchesPlayer;
-    }
+    static int countMatchesNumberMovePlayer;
 
     public int move() {
         int matches;
@@ -37,10 +21,8 @@ public class Player {
         countMatchesNumberMovePlayer = matches;
         countMatchesPlayer += matches;
         Display.setInitialNumberMatches(Display.getInitialNumberMatches() - countMatchesNumberMovePlayer);
+
         return matches;
-    }
-   public int count(){
-        return countMatchesPlayer;
     }
 
 }

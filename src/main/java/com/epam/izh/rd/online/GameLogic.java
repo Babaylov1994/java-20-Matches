@@ -10,13 +10,18 @@ public class GameLogic {
         Display display = new Display();
 
         display.beginningGame();
-        computer.move();
-        display.printComputerMove(Computer.getCountMatchesComputer());
-        display.printNumberMatchesTable();
-        player.move();
-        display.printNumberMatchesTable();
-
-
+        while (true) {
+            computer.move();
+            if (Display.getInitialNumberMatches() == 1){
+                break;
+            }
+            display.printNumberMatchesTable();
+            player.move();
+            if (Display.getInitialNumberMatches() == 1){
+                break;
+            }
+            display.printNumberMatchesTable();
+        }
+        display.printGameOver();
     }
-
 }
