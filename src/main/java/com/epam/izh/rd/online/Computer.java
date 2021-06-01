@@ -18,9 +18,9 @@ public class Computer extends Player {
             return firstMove;
         } else
             countMatchesNumberMoveComputer = 4 - Player.countMatchesNumberMovePlayer;
-            System.out.println("Количество выбранных компьютером спичек = " + countMatchesNumberMoveComputer);
-            countMatchesComputer += countMatchesNumberMoveComputer;
-            Display.setInitialNumberMatches(Display.getInitialNumberMatches() - countMatchesNumberMoveComputer);
+        System.out.println("Количество выбранных компьютером спичек = " + countMatchesNumberMoveComputer);
+        countMatchesComputer += countMatchesNumberMoveComputer;
+        Display.setInitialNumberMatches(Display.getInitialNumberMatches() - countMatchesNumberMoveComputer);
 
         return countMatchesNumberMoveComputer;
     }
