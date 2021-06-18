@@ -2,7 +2,7 @@ package main.java.com.epam.izh.rd.online;
 
 import java.util.Scanner;
 
-public class Player {
+public class Player extends Members {
 
     static int countMatchesPlayer;
 

@@ -1,7 +1,7 @@
 package main.java.com.epam.izh.rd.online;
 
 
-public class Computer extends Player {
+public class Computer extends Members {
 
     static int countMatchesComputer = 0;
 
