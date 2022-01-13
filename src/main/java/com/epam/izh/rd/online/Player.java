@@ -2,7 +2,7 @@ package main.java.com.epam.izh.rd.online;
 
 import java.util.Scanner;
 
-public class Player {
+public class Player extends Members {
 
     static int countMatchesPlayer;
 
@@ -10,7 +10,7 @@ public class Player {
 
     public int move() {
         int matches;
-        while (true){
+        while (true) {
             System.out.print("Ход игрока. Введите количество спичек: ");
             Scanner scanner = new Scanner(System.in);
             matches = scanner.nextInt();

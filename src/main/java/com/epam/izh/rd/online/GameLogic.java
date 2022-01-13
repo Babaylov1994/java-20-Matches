@@ -12,12 +12,12 @@ public class GameLogic {
         display.beginningGame();
         while (true) {
             computer.move();
-            if (Display.getInitialNumberMatches() == 1){
+            if (Display.getInitialNumberMatches() == 1) {
                 break;
             }
             display.printNumberMatchesTable();
             player.move();
-            if (Display.getInitialNumberMatches() == 1){
+            if (Display.getInitialNumberMatches() == 1) {
                 break;
             }
             display.printNumberMatchesTable();
